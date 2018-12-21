@@ -8,9 +8,11 @@ class SchoolClassesController < ApplicationController
   end 
   
   def create
+   # @school_class = SchoolClass.create
   end 
   
   def edit 
+    @school_class = SchoolClass.find(params[:id])
   end 
   
   def update
