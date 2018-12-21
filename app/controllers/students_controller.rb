@@ -3,12 +3,17 @@ class StudentsController < ApplicationController
     @students = Student.all
   end 
   
+  def new 
+    @students = Student.new
+  end 
+  
   def show 
     @student = Student.find(params[:id])
   end 
   
-  def new 
-    @students = Student.new
+  def create
+    @school_class = SchoolClass.create(params.require(:school_class))
+    redirect_to school_class_path(@school_class)
   end 
   
   def edit 
@@ -16,6 +21,16 @@ class StudentsController < ApplicationController
   end
   
   def update
+      @school_class = SchoolClass.find(params[:id])
+    @school_class.update(params.require(:school_class))
+    redirect_to school_class_path(@school_class)
+  end 
+  
+end
+
+  
+  def update
+  
   end 
   
 end
