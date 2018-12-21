@@ -2481,3 +2481,17 @@ Processing by StudentsController#index as HTML
   [1m[36mStudent Load (0.7ms)[0m  [1mSELECT "students".* FROM "students"[0m
   Rendered students/index.html.erb within layouts/application (6.1ms)
 Completed 200 OK in 89ms (Views: 25.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students" for 174.16.138.180 at 2018-12-21 17:27:41 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for 174.16.138.180 at 2018-12-21 17:27:48 +0000
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.2ms)
