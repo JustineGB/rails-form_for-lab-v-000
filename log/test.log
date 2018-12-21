@@ -1430,3 +1430,6 @@ Completed 200 OK in 278ms (Views: 260.8ms | ActiveRecord: 0.4ms)
   [1m[35m (0.0ms)[0m  begin transaction
 Started GET "/students/new" for 127.0.0.1 at 2018-12-21 17:48:11 +0000
 Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 248ms (Views: 231.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
