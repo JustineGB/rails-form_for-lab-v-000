@@ -1,1 +1,13 @@
-<h1> Edit a School Class: </h1>
+<h1> Edit a School Class Form: </h1>
+<h1> Edit a Student Record Form: </h1>
+
+ 
+<%= form_for(@student) do |f| %>
+  <label>Student First Name:</label><br>
+  <%= f.text_field :first_name %><br>
+ 
+  <label>Student Last Name: </label><br>
+  <%= f.text_field :last_name %><br>
+ 
+  <%= f.submit %>
+<% end %>
