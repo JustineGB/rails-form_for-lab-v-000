@@ -1773,3 +1773,5 @@ Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
 Started GET "/school_classes/new" for 127.0.0.1 at 2018-12-21 17:49:32 +0000
 Processing by SchoolClassesController#new as HTML
   Rendered school_classes/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 259ms (Views: 244.4ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
