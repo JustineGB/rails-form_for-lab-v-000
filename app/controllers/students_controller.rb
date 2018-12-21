@@ -12,8 +12,8 @@ class StudentsController < ApplicationController
   end 
   
   def create
-    @school_class = SchoolClass.create(params.require(:school_class))
-    redirect_to school_class_path(@school_class)
+    @student = Student.create(params.require(:student))
+    redirect_to student_path(@student)
   end 
   
   def edit 
